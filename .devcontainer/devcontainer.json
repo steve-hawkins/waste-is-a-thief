@@ -3,19 +3,36 @@
 {
   "name": "Jekyll",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/jekyll:3.4-bookworm",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
-  // "features": {},
+  "features": {
+    "ghcr.io/devcontainers/features/powershell:1": {}
+  },
+
+  // customizations
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // general editing
+        "google.geminicodeassist",
+        "google.gemini-cli-vscode-ide-companion",
+        "streetsidesoftware.code-spell-checker",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "ms-vscode.powershell",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [
-  //   4000,
-  //   35729
-  // ],
+  // "forwardPorts": [4000],
 
   // Uncomment the next line to run commands after the container is created.
-  "postStartCommand": ".devcontainer/build.sh"
+  "postCreateCommand": "bash ./postCreateScript.sh"
 
   // Configure tool-specific properties.
   // "customizations": {},
