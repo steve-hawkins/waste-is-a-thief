@@ -16,11 +16,9 @@ done
 # Navigate to the docs directory where the site source is
 cd "$(dirname "$0")/../docs"
 
-# Skip bundle install in CI as it is handled by setup-ruby with caching
-if [ "$CI" != "true" ]; then
-    echo "Installing dependencies..."
-    bundle install
-fi
+# Install dependencies
+echo "Installing dependencies..."
+bundle install
 
 echo "Building the site..."
 if [ -n "$BASEURL" ]; then
