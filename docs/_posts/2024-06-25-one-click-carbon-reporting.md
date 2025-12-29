@@ -11,4 +11,5 @@ I have had the recent opportunity to meet the great people of Icebreaker One pro
 
 I could try and write in more detail about the intent of Project Perseus, but they have spent the time and effort on this fantastic video:
 
-{% youtube "https://www.youtube.com/watch?v=vJVj6fM1GJw" %}
+<!-- markdownlint-disable-next-line MD034 -->
+{% youtube "vJVj6fM1GJw" %}

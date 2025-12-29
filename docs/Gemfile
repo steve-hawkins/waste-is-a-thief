@@ -11,4 +11,7 @@ group :jekyll_plugins do
   gem "jekyll-youtube"
 end
 
+gem "csv"
 gem "webrick", "~> 1.8"
+
+gem "html-proofer", "~> 5.0"

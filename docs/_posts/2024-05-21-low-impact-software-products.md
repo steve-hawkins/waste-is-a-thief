@@ -41,7 +41,7 @@ All good so far and vscode feels like it does on any other device.
 
 I went for GitHub as they, and Microsoft their parent company, have [robust environmental sustainability commitments](https://github.blog/2021-04-22-environmental-sustainability-github/).  I still need to look into the alternatives in terms of environmental impact in more detail, but the fact I could store the code in a GitHub repository, develop with [GitHub Codespaces](https://github.com/features/codespaces) (more on this later), build with [GitHub Actions](https://github.com/features/actions) and host the blog on [GitHub Pages](https://pages.github.com/) made it an compelling choice.
 
-If you do want to see the source for this blog you can find it [here](https://github.com/steve-hawkins/waste-is-a-thief).
+If you do want to see the source for this blog you can find it [on GitHub](https://github.com/steve-hawkins/waste-is-a-thief).
 
 Now let's work our way backwards through those choices.
 
